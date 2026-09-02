@@ -27,7 +27,11 @@ def generate_array(arr):
 
 array = []
 generate_array(array)
-#bubble_sort(array)
+print("\n")
+print("Lista sin Arreglar: ", array, "\n")
+print("--------------------------------")
+for i in array:
+    bubble_sort(i)
 print("\n")
 print("Lista Arreglada: ", array, "\n")
 print("--------------------------------")

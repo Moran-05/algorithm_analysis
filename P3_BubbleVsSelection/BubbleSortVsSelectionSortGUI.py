@@ -64,11 +64,6 @@ def generate_array(arr):
             else:
                 print("Rango Invalido")
 
-def bubble_sort_automatic(array):
-    for i in array:
-        bubble_sort(i)
-    orderedArea.config(text="Arreglo Ordenado!!")
-
 def generate_graph():
     plt.figure(num="Grafica", clear=True)
     plt.plot(elements, times, marker='o', label="BubbleSort")
@@ -93,7 +88,7 @@ incArea = tk.Scale(root, from_=5, to=100, orient=tk.HORIZONTAL, length=200)
 incArea.pack(pady=10)
 maxText = tk.Label(root, text="Ingresa el numero de elementos final: ")
 maxText.pack(pady=10)
-maxArea = tk.Scale(root, from_=1000, to=1000000, orient=tk.HORIZONTAL, length=200)
+maxArea = tk.Scale(root, from_=100, to=10000, orient=tk.HORIZONTAL, length=400)
 maxArea.pack(pady=10)
 array = []
 elements = []
